@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "cd540c54-c94f-4ff6-a17f-14223365e5f2",
+		"name": "Анна Коренена",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34873544"
+	},
+	"item": [
+		{
+			"name": "Информация о книге",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://66095c000f324a9a28832d7e.mockapi.io/state",
+					"protocol": "https",
+					"host": [
+						"66095c000f324a9a28832d7e",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление данных",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Анна Каренина\",\r\n        \"avatar\": \"\",\r\n        \"id\": \"4\",\r\n        \"это\": 2221,\r\n        \"сказал\": 1411,\r\n        \"левин\": 1135,\r\n        \"сказала\": 827,\r\n        \"кити\": 658,\r\n        \"очень\": 569,\r\n        \"вронский\": 508,\r\n        \"анна\": 497,\r\n        \"алексей\": 429,\r\n        \"степан\": 423\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://66095c000f324a9a28832d7e.mockapi.io/state",
+					"protocol": "https",
+					"host": [
+						"66095c000f324a9a28832d7e",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление данных",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://66095c000f324a9a28832d7e.mockapi.io/state/4",
+					"protocol": "https",
+					"host": [
+						"66095c000f324a9a28832d7e",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"state",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Исправление данных",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Анна Каренина\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://66095c000f324a9a28832d7e.mockapi.io/state/2",
+					"protocol": "https",
+					"host": [
+						"66095c000f324a9a28832d7e",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"state",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Информация о сервере",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://66095c000f324a9a28832d7e.mockapi.io",
+					"protocol": "https",
+					"host": [
+						"66095c000f324a9a28832d7e",
+						"mockapi",
+						"io"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
