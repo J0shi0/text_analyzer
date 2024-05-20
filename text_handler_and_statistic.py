@@ -8,13 +8,9 @@ nltk.download('stopwords')
 
 
 def load_text(file_name: str):
-    try:
-        # Открытие файла в контекстном менеджере
-        with open(file_name, 'r', encoding='utf8') as f:
-            #
-            return f.read()
-    except FileNotFoundError as e:
-        print(e)
+    # Открытие файла в контекстном менеджере
+    with open(file_name, 'r', encoding='utf8') as f:
+        return f.read()
 
 
 def clean_text(text):
@@ -37,5 +33,3 @@ def count_words(tokens):
 
 def display_top_words(counted_tokens: Counter, num_top=10):
     return counted_tokens.most_common(num_top)
-
-
